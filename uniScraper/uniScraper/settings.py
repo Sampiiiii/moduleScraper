@@ -1,4 +1,4 @@
-# Scrapy settings for moduleScraper project
+# Scrapy settings for uniScraper project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,17 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'moduleScraper'
+BOT_NAME = 'uniScraper'
 
-SPIDER_MODULES = ['moduleScraper.spiders']
-NEWSPIDER_MODULE = 'moduleScraper.spiders'
+SPIDER_MODULES = ['uniScraper.spiders']
+NEWSPIDER_MODULE = 'uniScraper.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'moduleScraper (+http://www.yourdomain.com)'
+#USER_AGENT = 'uniScraper (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'moduleScraper.middlewares.ModulescraperSpiderMiddleware': 543,
+#    'uniScraper.middlewares.uniScraperSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'moduleScraper.middlewares.ModulescraperDownloaderMiddleware': 543,
+#    'uniScraper.middlewares.uniScraperDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'moduleScraper.pipelines.ModulescraperPipeline': 300,
+#    'uniScraper.pipelines.uniScraperPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -87,5 +87,5 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 FEED_EXPORTERS = {
-    'csv': 'moduleScraper.exporters.QuoteAllCsvItemExporter',
+    'csv': 'uniScraper.exporters.QuoteAllCsvItemExporter',
 }
